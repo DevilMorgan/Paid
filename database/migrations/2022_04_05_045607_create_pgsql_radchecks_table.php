@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::connection('pgsql')->create('pgsql_radchecks', function (Blueprint $table) {
+        Schema::connection('mysql')->create('pgsql_radchecks', function (Blueprint $table) {
             $table->id();
             $table->foreignId('mgid');
             $table->foreignId('customer_id');

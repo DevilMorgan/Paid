@@ -22,7 +22,7 @@ class SuperAdmin extends Seeder
             $super_admin->name = 'Super Admin';
             $super_admin->email = config('consumer.super_admin_email');
             $super_admin->email_verified_at = Carbon::now(config('app.timezone'));
-            $super_admin->password = Hash::make('w6kMa$Yr2xMd3$rvOdB9');
+            $super_admin->password = Hash::make('a456456a');
             $super_admin->company = config('consumer.app_subscriber');
             $super_admin->mobile = config('consumer.super_admin_mobile');
             $super_admin->role = 'super_admin';

@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::connection('pgsql')->create('pgsql_nas', function (Blueprint $table) {
+        Schema::connection('mysql')->create('pgsql_nas', function (Blueprint $table) {
             $table->id();
             $table->foreignId('mgid');
             $table->text('location')->nullable();

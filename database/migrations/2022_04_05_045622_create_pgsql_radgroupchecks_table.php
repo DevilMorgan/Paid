@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::connection('pgsql')->create('pgsql_radgroupchecks', function (Blueprint $table) {
+        Schema::connection('mysql')->create('pgsql_radgroupchecks', function (Blueprint $table) {
             $table->id();
             $table->string('groupname', 64);
             $table->string('attribute', 64);

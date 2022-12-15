@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::connection('pgsql')->create('pgsql_radpostauths', function (Blueprint $table) {
+        Schema::connection('mysql')->create('pgsql_radpostauths', function (Blueprint $table) {
             $table->id();
             $table->foreignId('mgid')->default(0);
             $table->foreignId('operator_id')->default(0);

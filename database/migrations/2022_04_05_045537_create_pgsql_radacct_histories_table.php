@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::connection('pgsql')->create('pgsql_radacct_histories', function (Blueprint $table) {
+        Schema::connection('mysql')->create('pgsql_radacct_histories', function (Blueprint $table) {
             $table->id();
             $table->string('username', 64);
             $table->dateTime('acctstarttime')->nullable();
